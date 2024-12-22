@@ -1,0 +1,216 @@
+/* Общие стили */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #181a22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+header, main section {
+    scroll-margin-top: 80px; /* Настройте высоту отступа под ваш фиксированный хедер */
+}
+
+.logo a {
+    color: #fb7296;
+    text-decoration: none;
+}
+
+/* Навигация */
+.navbar {
+    text-decoration: none; /* Убирает подчеркивание */
+    font-family: "Big Shoulders Display", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #111;
+    position: fixed; /* Фиксированное положение */
+    top: 0; /* Закрепить сверху */
+    left: 0;
+    width: 100%; /* Растянуть на всю ширину */
+    height: 80px; /* Фиксированная высота хедера */
+    z-index: 1000; /* Позиция поверх других элементов */
+    background: url('../img/top-head.jpg') no-repeat center center / cover;
+    color: #ff4f60;
+    font-weight: bold;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Тень для красоты */
+}
+
+.logo {
+    font-family: "Big Shoulders Display", sans-serif;
+    margin-left: 30px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #fb7296;
+    line-height: 1; /* Убираем дополнительный интервал между строками */
+    transform: scale(1.2); /* Увеличение текста на 20% */
+    transform-origin: left center; /* Точка трансформации */
+}
+
+.navbar ul {
+    text-decoration: none; /* Убирает подчеркивание */
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar li {
+    cursor: pointer;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #fb7296;
+}
+
+
+.nav-right button {
+    margin-right: 40px;
+    padding: 8px 12px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.login-btn {
+    background-color: #ff4f60;
+    border: none;
+    color: #fff;
+}
+
+/* Контейнер авторизации */
+.auth-container {
+    width: 100%;
+    max-width: 400px;
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+}
+
+.auth-header {
+    margin-bottom: 20px;
+}
+
+.auth-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ff5c8a;
+}
+
+.auth-subtitle {
+    font-size: 14px;
+    color: #777;
+    margin-top: 5px;
+}
+
+/* Форма */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group {
+    text-align: left;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.input-group input {
+    width: 367px;
+    padding: 12px 15px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus {
+    border-color: #ff5c8a;
+    outline: none;
+}
+
+/* Кнопки */
+.btn {
+    padding: 12px 0;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.primary-btn {
+    background-color: #ff5c8a;
+    color: #fff;
+}
+
+.primary-btn:hover {
+    background-color: #e6537a;
+    transform: scale(1.03);
+}
+
+.link-btn {
+    background: none;
+    color: #ff5c8a;
+    text-decoration: underline;
+}
+
+.link-btn:hover {
+    color: #e6537a;
+}
+
+/* Текст переключения */
+.toggle-text {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+/* Стили для ошибок */
+.error-message {
+    display: none;
+    color: #ff5c5c;
+    font-size: 14px;
+    margin-top: 5px;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .error-message.visible {
+    display: block;
+  }
+  
+  /* Анимация появления */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

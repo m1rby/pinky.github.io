@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background:  #181a22;
+}
+
+header, main section {
+    scroll-margin-top: 80px; /* Настройте высоту отступа под ваш фиксированный хедер */
+}
+
+.logo a {
+    color: #fb7296;
+    text-decoration: none;
+}
+
+/* Навигация */
+.navbar {
+    text-decoration: none; /* Убирает подчеркивание */
+    font-family: "Big Shoulders Display", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #111;
+    position: fixed; /* Фиксированное положение */
+    top: 0; /* Закрепить сверху */
+    left: 0;
+    width: 100%; /* Растянуть на всю ширину */
+    height: 80px; /* Фиксированная высота хедера */
+    z-index: 1000; /* Позиция поверх других элементов */
+    background: url('../img/top-head.jpg') no-repeat center center / cover;
+    color: #ff4f60;
+    font-weight: bold;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Тень для красоты */
+}
+
+.logo {
+    font-family: "Big Shoulders Display", sans-serif;
+    margin-left: 30px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #fb7296;
+    line-height: 1; /* Убираем дополнительный интервал между строками */
+    transform: scale(1.2); /* Увеличение текста на 20% */
+    transform-origin: left center; /* Точка трансформации */
+}
+
+.navbar ul {
+    text-decoration: none; /* Убирает подчеркивание */
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar li {
+    cursor: pointer;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #fb7296;
+}
+
+
+.nav-right button {
+    margin-right: 40px;
+    padding: 8px 12px;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.login-btn {
+    background-color: #ff4f60;
+    border: none;
+    color: #fff;
+}
+
+
+.container {
+    margin-top: 300px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.contact-info {
+    margin-top: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.contact-info div {
+    width: 30%;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.contact-info h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+.contact-info p {
+    margin: 10px 0;
+}
+
+.map-container {
+    color: white;
+    position: relative;
+    height: 400px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+footer {
+    background:  #181a22;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

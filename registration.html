@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация и Вход</title>
+    <link rel="stylesheet" href="css/registration.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><a href="index.html">PINKY</a></div>
+            
+            <div class="nav-right">
+                <button>Язык</button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="auth-container">
+        <div class="auth-wrapper">
+            <div class="auth-header">
+                <h1 class="auth-title" id="authTitle">Регистрация</h1>
+                <p class="auth-subtitle" id="authSubtitle">Создай свой аккаунт, чтобы начать общаться!</p>
+            </div>
+            <form id="authForm" class="auth-form">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Введите ваш email" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Пароль</label>
+                    <input type="password" id="password" name="password" placeholder="Введите ваш пароль" required>
+                </div>
+                <div class="input-group" id="birthdateGroup">
+                    <label for="birthdate">Дата рождения</label>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                </div>
+                <button type="submit" class="btn primary-btn" id="authButton">Зарегистрироваться</button>
+            </form>
+            <p class="toggle-text">
+                Уже есть аккаунт? 
+                <button class="btn link-btn" id="toggleAuth">Войти</button>
+            </p>
+        </div>
+    </section>
+    <script src="regscript.js"></script>
+</body>
+</html>
