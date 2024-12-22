@@ -398,21 +398,6 @@ header, main section {
     transform: scale(1);
 }
 
-/* Адаптивность */
-@media (max-width: 600px) {
-    .support-form {
-        padding: 15px 20px;
-    }
-
-    .support-section h2 {
-        font-size: 28px;
-    }
-
-    .support-section p {
-        font-size: 14px;
-    }
-}
-
 
 
 /* Анимация fadeInDown */
@@ -547,3 +532,198 @@ footer {
 .error-message.visible {
     display: block; /* Показать ошибку */
 }
+
+
+
+
+/* Стили для больших экранов */
+@media (max-width: 1200px) {
+    .navbar {
+        padding: 10px 15px;
+        height: auto;
+    }
+    .logo {
+        font-size: 40px;
+    }
+    .navbar ul {
+        gap: 15px;
+    }
+   
+}
+
+/* Стили для средних экранов */
+@media (max-width: 992px) {
+
+    .hero h1 {
+        font-size: 60px;
+    }
+    .hero p {
+        justify-content: center;
+        font-size: 25px;
+    }
+
+    .join-btn {
+        text-decoration: none;
+        padding: 10px 20px;
+        background-color: #fb7296;
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+        font-size: 30px;
+        cursor: pointer;
+        
+    }
+    .safety-list li {
+        font-size: 20px;
+        color: #ffffff;
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;   
+    }
+
+    .safety-intro {
+        font-size: 20px;
+        color: #ffffff;
+        margin-bottom: 20px;
+        line-height: 1.6;
+    }
+
+    .learn-more-btn {
+        margin-left: 260px;
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 20px;
+        background-color: #ff5c8a;
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    } 
+    
+    .swipe-images img {
+        width: 300px;
+    }
+    .support-section p {
+        font-size: 20px;
+    }
+    .support-form label {
+        font-size: 20px;
+    }
+}
+
+/* Стили для маленьких экранов */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Скрываем меню */
+    }
+    .navbar {
+        
+        align-items: flex-start;
+    }
+    .hero {
+        flex-direction: row;
+        align-items: center; /* Выравниваем элементы по вертикали */
+        justify-content: space-between; /* Раздвигаем текст и изображения */
+        padding: 30px 15px;
+    }
+    .hero h1 {
+        font-size: 60px;
+    }
+    .hero p {
+        justify-content: center;
+        font-size: 25px;
+    }
+    .text-content, .image-content {
+        flex-wrap: wrap;
+        animation: none; /* Упрощение анимаций */
+        transform: none;
+        opacity: 1;
+    }
+    .join-btn {
+        text-decoration: none;
+        padding: 10px 20px;
+        background-color: #fb7296;
+        color: #fff;
+        border: none;
+        border-radius: 20px;
+        font-size: 30px;
+        cursor: pointer;
+        
+    }
+
+    .image-content img {
+        width: 300px;
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+
+    #ideas .text-content {
+        text-align: center; /* Выравнивание текста по правому краю */
+    }
+    
+    .swipe-images {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .swipe-images img {
+        width: 200px;
+    }
+    .safety-container {
+        padding: 15px;
+    }
+    .safety-list li {
+        font-size: 20px;
+        color: #ffffff;
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;   
+    }
+
+    .safety-intro {
+        font-size: 20px;
+        color: #ffffff;
+        margin-bottom: 20px;
+        line-height: 1.6;
+    }
+
+    .learn-more-btn {
+        margin-left: 260px;
+        display: inline-block;
+        margin-top: 20px;
+        padding: 12px 20px;
+        background-color: #ff5c8a;
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+    .support-section h2 {
+        font-size: 24px;
+    }
+    .support-form {
+        width: 100%;
+        padding: 10px;
+    }
+    .support-section p {
+        font-size: 20px;
+    }
+    .support-form label {
+        font-size: 20px;
+    }
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+    .review-card {
+        padding: 10px;
+    }
+}
+
