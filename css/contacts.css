@@ -6,7 +6,7 @@ body {
 }
 
 header, main section {
-    scroll-margin-top: 80px; /* Настройте высоту отступа под ваш фиксированный хедер */
+    scroll-margin-top: 80px; 
 }
 
 .logo a {
@@ -14,26 +14,31 @@ header, main section {
     text-decoration: none;
 }
 
-/* Навигация */
+a:-webkit-any-link {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
 .navbar {
-    text-decoration: none; /* Убирает подчеркивание */
+    text-decoration: none; 
     font-family: "Big Shoulders Display", sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
     background-color: #111;
-    position: fixed; /* Фиксированное положение */
-    top: 0; /* Закрепить сверху */
+    position: fixed; 
+    top: 0; 
     left: 0;
-    width: 100%; /* Растянуть на всю ширину */
-    height: 80px; /* Фиксированная высота хедера */
-    z-index: 1000; /* Позиция поверх других элементов */
+    width: 100%; 
+    height: 80px; 
+    z-index: 1000; 
     background: url('../img/top-head.jpg') no-repeat center center / cover;
     color: #ff4f60;
     font-weight: bold;
     padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Тень для красоты */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); 
 }
 
 .logo {
@@ -42,13 +47,13 @@ header, main section {
     font-size: 50px;
     font-weight: bold;
     color: #fb7296;
-    line-height: 1; /* Убираем дополнительный интервал между строками */
-    transform: scale(1.2); /* Увеличение текста на 20% */
-    transform-origin: left center; /* Точка трансформации */
+    line-height: 1; 
+    transform: scale(1.2); 
+    transform-origin: left center; 
 }
 
 .navbar ul {
-    text-decoration: none; /* Убирает подчеркивание */
+    text-decoration: none; 
     list-style: none;
     display: flex;
     gap: 20px;
@@ -148,19 +153,8 @@ footer {
     bottom: 0;
 }
 
-/* Стили для больших экранов */
-@media (max-width: 1200px) {
- 
-   
-}
 
-/* Стили для средних экранов */
-@media (max-width: 992px) {
 
- 
-}
-
-/* Стили для маленьких экранов */
 @media (max-width: 768px) {
     .contact-info div {
         width: 200px;
