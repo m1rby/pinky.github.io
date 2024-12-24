@@ -105,6 +105,13 @@ a:-webkit-any-link {
     color: #fff;
 }
 
+.nav-right button a {
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+
 .login-btn a {
     text-decoration: none;
     color: #fff;
